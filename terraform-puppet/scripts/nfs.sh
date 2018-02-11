@@ -10,7 +10,7 @@ sudo systemctl stop firewalld
 sudo systemctl disable firewalld
 sudo iptables -F
 
-# Firewall setting for NFS. Not needed for POC
+# Firewall setting for NFS. Uncomment if needed.
 #sudo firewall-offline-cmd --zone=public --add-service=nfs
 
 sudo yum -y install nfs-utils
