@@ -38,3 +38,13 @@ export TF_VAR_ssh_authorized_private_key=$(cat userdata/ssh_key.ssh)
 #### The userdata directory contains your APIkey.pem (logs you into your cloud account) as well as your public and private ssh keys you will use to log into your newly created instances. If you need help creating either of these take a look at Oracle's documentation: https://docs.us-phoenix-1.oraclecloud.com/Content/API/Concepts/apisigningkey.htm.
   * Create the APIkey.pem file. 
   * Don't forget to also add your private and public ssh keys into the userdata directory.
+
+## You can try running this without oradb and installer (you still need userdata). What will happen is you will have a compute instance with a block volume and other instances connected to it through NFS. 
+
+##### terraform plan -out=plan.out
+##### terraform apply "plan.out"
+
+#### DESTROY EVERYTHING!
+
+###### terraform destroy 
+
