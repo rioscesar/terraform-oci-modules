@@ -51,6 +51,6 @@ export TF_VAR_ssh_authorized_private_key=$(cat userdata/ssh_key.ssh)
 ## Things to consider when using this resource as is.
   * NFS file system is set to 50GB and Agent volumes are set to 100GB. You can modify these values on *vars.tf* but make sure to also modify *volume.layout* for the Agents and/or *master.layout* for the Master. 
 
-#### Terraform works great if you have an architecture you want to build beforehand and then code to that standard. For that I recommend setting your infrastructure at least once before creating Terraform modules. Those layout files were created using fdisk to partition the block volume attached to the instance. sfdisk --dump \<your volume location\> was then used to write what your partition looked likes to a file.
+#### Terraform works great if you have an architecture you want to build beforehand and then code to that standard. For that I recommend creating your infrastructure at least once before running any Terraform modules. The layout files used in this example were created using fdisk to partition the block volume attached to the instance. sfdisk --dump \<your volume location\> was then used to write what your partition looked like to a file.
   * fdisk \<your volume location\>
   * sfdisk -d \<your volume location\> > volume.layout
