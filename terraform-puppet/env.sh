@@ -7,8 +7,8 @@ export TF_VAR_user_ocid="Enter Your User OCID Here"
 export TF_VAR_fingerprint="Fingerprint Here"
 #Enter Your Region
 export TF_VAR_region="Enter Your Region Here"
-
-export TF_VAR_image_ocid="Custom Image OCID"
+#Enter Image OCID
+export TF_VAR_image_ocid="Image OCID Here"
 export TF_VAR_instance_shape="VM.Standard1.4"
 
 #Change following fields to point to correct keys
