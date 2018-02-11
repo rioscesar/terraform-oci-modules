@@ -19,9 +19,9 @@ export TF_VAR_image_ocid="Custom Image OCID"
 export TF_VAR_instance_shape="VM.Standard1.4"
 
 #Change following fields to point to correct keys
-export TF_VAR_private_key_path="userdata/keys/APIkey.pem"
-export TF_VAR_ssh_public_key=$(cat userdata/keys/ssh_key.pub)
-export TF_VAR_ssh_authorized_private_key=$(cat userdata/keys/ssh_key.ssh)
+export TF_VAR_private_key_path="userdata/APIkey.pem"
+export TF_VAR_ssh_public_key=$(cat userdata/ssh_key.pub)
+export TF_VAR_ssh_authorized_private_key=$(cat userdata/ssh_key.ssh)
 ```
   
 ## Missing directories:
