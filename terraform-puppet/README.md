@@ -2,7 +2,7 @@
 
 #### *Disclaimer! This is not production level code. Should be treated as a resource on how to connect Puppet Enterprise with Terraform as well as automating NFS.*
 
-## Modify the env.sh file to match your configurations to point to your cloud. 
+## Modify the env.sh file to match your configurations to point to your cloud environment. 
 
 ```#Enter Your Tenancy OCID
 export TF_VAR_tenancy_ocid="Enter Your Tenancy OCID Here"
