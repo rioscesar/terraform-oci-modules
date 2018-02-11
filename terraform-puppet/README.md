@@ -1,6 +1,6 @@
 # Terraform Puppet example. 
 
-#### *Disclaimer! This is not production level code. Should be treated as a resource on how to connect Puppet Enterprice with Terraform as well as automating NFS.*
+#### *Disclaimer! This is not production level code. Should be treated as a resource on how to connect Puppet Enterprise with Terraform as well as automating NFS.*
 
 ## Modify the env.sh file to match your configurations to point to your cloud. 
 
