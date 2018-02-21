@@ -30,8 +30,8 @@
       #"chmod +x /tmp/puppet.sh",
       #"chmod +x /tmp/update_agent.sh",
       "chmod +x /tmp/nfs.sh",
-      "sudo /tmp/nfs.sh",
-      #"sudo /tmp/puppet.sh",
+      "sudo /tmp/nfs.sh"
+      #, "sudo /tmp/puppet.sh",
       #"for ((n=0;n<2;n++)); do sudo /tmp/update_agent.sh; done"
     ]
   }
@@ -65,8 +65,8 @@ resource "null_resource" "agent-config" {
       "chmod +x /tmp/mount.sh",
       "sudo /tmp/nfs-client.sh",
       "sudo /tmp/mount.sh",
-      "sudo mount -t nfs ${var.master-private-ip}:/mnt/nfs/ /nfs/",
-      #"sudo /tmp/agent.sh"
+      "sudo mount -t nfs ${var.master-private-ip}:/mnt/nfs/ /nfs/"
+      #, "sudo /tmp/agent.sh"
     ]
   }
 }
