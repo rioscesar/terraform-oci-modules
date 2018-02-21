@@ -1,4 +1,4 @@
-#resource "null_resource" "master-config" {
+resource "null_resource" "master-config" {
 #  provisioner "file" {
 #    connection {
 #      host = "${var.master-public-ip}" 
