@@ -1,0 +1,11 @@
+*.*~
+*.*#
+userdata/
+env.sh
+.terraform/
+*.tfstate*
+*.backup
+installer/OracleJava/java-8/server-jre-8u161-linux-x64.tar.gz
+installer/OracleWebLogic/dockerfiles/12.2.1/fmw_12.2.1.0.0_wls_quick_Disk1_1of1.zip
+installer/OracleWebLogic/dockerfiles/12.2.1/fmw_12.2.1.0.0_wls_supplemental_quick_Disk1_1of1.zip
+installer/OracleWebLogic/dockerfiles/12.2.1/fmw_12.2.1.3.0_wls_Disk1_1of1.zip
